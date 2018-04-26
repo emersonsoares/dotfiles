@@ -46,3 +46,15 @@ export PATH=$PATH:/opt/local/bin
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 plugins=(jsontools)
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+
+export PATH=~/.local/bin:$PATH
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/emersonsoares/.asdf/installs/nodejs/9.3.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/emersonsoares/.asdf/installs/nodejs/9.3.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/emersonsoares/.asdf/installs/nodejs/9.3.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/emersonsoares/.asdf/installs/nodejs/9.3.0/.npm/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
